@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Moldovan Andreea" />
+    <meta
+      name="keywords"
+      content="mâncare, proaspăt, ramen, risipă alimentară"
+    />
+    <meta
+      name="description"
+      content="Restaurant inedit cu mâncare sănătoasă care promovează minimizarea risipei alimentare"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Green cuisine</title>
+    <link rel="icon" href="food/plant2.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      .carousel {
+        max-height: 50vh;
+      }
+
+      .carousel-item .ratio img {
+        object-fit: cover;
+        max-height: 50vh;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 10px;
+      }
+
+      h2,
+      h3 {
+        font-weight: bold;
+        padding: 7px;
+      }
+
+      .fw-bold {
+        text-align: center;
+      }
+
+      .item li {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      address {
+        text-align: center;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+     
+    </style>
+  </head>
+
+  <body class="container-fluid">
+    <nav
+      id="main-navbar"
+      class="navbar navbar-expand-lg bg-body-tertiary px-lg-5 px-2 bg-success bg-opacity-75"
+    >
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="food/plant.png"
+          alt="Logo"
+          width="30"
+          height="30"
+          class="d-inline-block align-text-top"
+        />
+        Green Cuisine
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#despre-noi">Despre noi</a>
+          <a class="nav-link active" href="#meniu">Meniu</a>
+          <a class="nav-link active" href="#locatie">Locație</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mx-lg-5 mx-2 bg-success bg-opacity-25">
+      <header>
+        <div id="carousel_container" class="row">
+          <div id="main_carousel" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#main_carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#main_carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#main_carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#main_carousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#main_carousel"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="ratio ratio-21x9">
+                  <img
+                    src="food/bucatarie.jpg"
+                    class="d-block w-100"
+                    alt="poză cu filtru vintage cu o bucătărie în care se află un bucătar cu șorț alb"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                  <img
+                    src="food/bar.jpg"
+                    class="d-block w-100"
+                    alt="un bar cu un sortiment mare de băuturi alcoolice în fața căruia se află câteva scaune înalte"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                  <img
+                    src="food/burger.jpg"
+                    class="d-block w-100"
+                    alt="o masă de lemn pe care sunt așezați burgeri, buritto și waffles "
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                  <img
+                    src="food/restaurant.jpg"
+                    class="d-block w-100"
+                    alt="o sală de mese cu scaune negre și mese de lemn maro. Pereții au decorațiuni din lemn"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                  <img
+                    src="food/fundal3.jpg"
+                    class="d-block w-100"
+                    alt="mese pe care sunt așezate vesela și pahare"
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#main_carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#main_carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <h1 class="fw-bold">GREEN CUISINE</h1>
+
+      <div id="despre-noi" class="row px-2">
+        <h2 class="fw-bold">Despre noi</h2>
+        <div class="container px-2">
+          <h3>Pasiune pentru un stil de viață sănătos</h3>
+
+          <p class="fs-4" text>
+            Meniul este o expresie a dragostei noastre pentru nutriție de înaltă
+            calitate și a pasiunii pentru gătit. Fiecare preparat este meticulos
+            creat folosind ingrediente proaspete, organice și locale, care
+            permit păstrarea gustului autentic și a valorii nutriționale a
+            fiecărui aliment. De la salata proaspătă la preparatele principale,
+            fiecare gustare este o călătorie culinară care înnobilează
+            sănătatea.Prepararea mâncărurilor se face într-un mod sănătos,
+            folosind tehnici precum coacerea, gătirea la abur, grătarul sau
+            fierberea, în locul prăjirii sau prăjelii excesive. Se evită
+            utilizarea uleiurilor și grăsimilor saturate în exces.
+          </p>
+        </div>
+        <div class="container">
+          <h3>Stop risipei alimentare</h3>
+
+          <p class="fs-4" text>
+            Risipa alimentară este o problemă răspândită pe plan global. Se
+            estimează că aproximativ o treime din alimentele produse la nivel
+            mondial sunt aruncate sau irosite în fiecare an. Risipa alimentară
+            este o problemă complexă, dar cu eforturi colective putem reduce
+            semnificativ acest fenomen dăunător. Este important să recunoaștem
+            gravitatea problemei și să luăm măsuri pentru a minimiza risipa
+            alimentară și a promova un sistem alimentar mai durabil și
+            echitabil. Restaurantul se bazeaza pe o noua metoda de a minimiza
+            risipa alimentara, promovand un meniu compus din preparate de baza
+            create pentru a satisface atat nevoile nutriționale, cat si papilele
+            gustative
+          </p>
+        </div>
+      </div>
+
+      <div id="meniu" class="row justify-content-center">
+        <h2 class="fw-bold">Meniu</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="food/pancakes.jpg"
+                class="card-img-top"
+                alt="o farfurie cu pancakes pufoase ornate cu afine"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Pancakes cu afine - 19 lei</h3>
+                <span class="badge text-bg-danger">În stoc</span>
+                <p class="card-text">
+                  Bucurați-vă de o delicioasă îmbinare între textura pufoasă a
+                  pancakelor și prospețimea dulce-acrișoară a afinelor cu
+                  Pancakes-ul nostru special. Un desert matinal sau o decadentă
+                  opțiune pentru brunch, această creație delicioasă este
+                  pregătită cu ingrediente proaspete și atenție la detalii
+                  pentru a vă oferi o experiență gustativă memorabilă.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="food/ramen.jpg"
+                class="card-img-top"
+                alt="un bol cu supă cu tăieței, legume și carne în stil asiatic"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Ramen - 30 lei</h3>
+                <span class="badge text-bg-danger">În stoc</span>
+                <p class="card-text">
+                  Experimentați o explozie de arome umami și texturi bogate cu
+                  Ramen-ul nostru cu Rață, o reinterpretare autentică a
+                  clasicului asiatic care va încânta cu siguranță simțurile.
+                  Pregătit cu pasiune și atenție la detalii, acest ramen oferă o
+                  experiență culinară complexă, aducând laolaltă gustul delicat
+                  al raței și aromele rafinate ale condimentelor asiatic.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="food/burrito.jpg"
+                class="card-img-top"
+                alt="un buritto cu pui și legume"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Buritto cu pui - 28 lei</h3>
+                <span class="badge text-bg-dark">Out of stoc</span>
+                <p class="card-text">
+                  Preparat cu măiestrie și pasiune, acest delicios burrito aduce
+                  împreună ingrediente proaspete și condimente autentice pentru
+                  a vă oferi o experiență gustativă autentică. Experimentați
+                  autenticitatea fiecărei mușcături cu Burrito-ul nostru cu Pui
+                  și Legume - o călătorie gastronomică în care prospețimea
+                  ingredientelor se îmbină perfect.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="food/poke.jpg"
+                class="card-img-top"
+                alt=" un bol asiatic cu legume și somon crud"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Poke bowl - 40 lei</h3>
+                <span class="badge text-bg-danger">În stoc</span>
+                <p class="card-text">
+                  Descoperiți autenticitatea bucătăriei hawaiiene cu Poke
+                  Bowl-ul nostru, o combinație vibrantă și sănătoasă de
+                  ingrediente proaspete, perfect asamblate pentru a vă oferi o
+                  experiență culinară revigorantă. Fiecare ingredient este atent
+                  ales și aranjat cu grijă pentru a vă oferi un Poke Bowl
+                  echilibrat și plin de arome proaspete.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="food/veggie.jpg"
+                class="card-img-top"
+                alt=" un bol cu legume la grătar pe un fundal roz "
+              />
+              <div class="card-body">
+                <h3 class="card-title">Legume la grătar - 26 lei</h3>
+                <span class="badge text-bg-danger">În stoc</span>
+                <p class="card-text">
+                  Această selecție de legume la grătar nu este doar o opțiune
+                  sănătoasă, ci și o călătorie în lumea gusturilor autentice ale
+                  grătarului. Fiecare legumă este pregătită cu grijă pentru a vă
+                  oferi o explozie de arome proaspete și delicioase în fiecare
+                  mușcătură. Un deliciu pentru cei care apreciază prospețimea și
+                  rafinamentul.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="food/toast.jpg"
+                class="card-img-top"
+                alt="o felie de pâine prăjită cu avocado și ou poșat"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Toast cu avocado - 17 lei</h3>
+                <span class="badge text-bg-danger">În stoc</span>
+                <p class="card-text">
+                  Experimentați o explozie de arome minunate și nutrienți în
+                  fiecare mușcătură din toast-ul nostru special de avocado.
+                  Avocado cremos și matur, perfect combinat cu condimente
+                  proaspete și ingrediente de cea mai înaltă calitate,
+                  reprezintă o opțiune gustoasă și sănătoasă pentru micul dejun
+                  sau brunchul din fiecare zi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="locatie" class="row p-2">
+        <h2 class="fw-bold">Locație</h2>
+
+        <div class="row">
+          <h3>Eleganță și rafinament</h3>
+
+          <p class="fs-4" text>
+            Green Cuisine este locul unde designul interior se întâlnește cu
+            rafinamentul pentru a vă oferi o experiență culinară de neuitat. La
+            intrare, veți fi întâmpinați de o atmosferă caldă și primitoare,
+            marcând începutul unei călătorii gastronomice inedite. Ușile noastre
+            elegante se deschid către un interior sofisticat, unde fiecare
+            element a fost ales cu grijă pentru a vă oferi o experiență
+            completă. Mesele noastre sunt amenajate cu atenție, iar scaunele
+            confortabile vă invită să vă relaxați și să vă bucurați de fiecare
+            moment petrecut în compania noastră. Decorul, de la tablouri
+            artistice la detalii arhitecturale inovatoare, reflectă
+            personalitatea și povestea unică a restaurantului nostru. Podelele
+            elegante și iluminatul atent studiat completează atmosfera, creând
+            un cadru plăcut pentru fiecare întâlnire la masă. Fiecare nuanță de
+            culoare și fiecare textură au fost alese cu grijă pentru a vă oferi
+            o experiență vizuală de neuitat. De la mobilierul elegant până la
+            accentele de iluminat plăcut, totul se îmbină pentru a vă transpune
+            într-un spațiu rafinat, pregătit să vă surprindă și să vă incite
+            simțurile. La restaurantul nostru, interiorul nu este doar un cadru,
+            ci o parte esențială a povestirii noastre culinare, iar suntem
+            încântați să vă avem alături pentru a explora și a savura această
+            experiență de excepție.
+          </p>
+          <p class="fs-4" text>
+            Petrecerile tematice aduc o notă de distracție și originalitate în
+            fiecare seară petrecută la noi. De la serate cu muzică live și
+            evenimente culturale până la petreceri tematice incendiare, avem o
+            varietate de evenimente care vă vor transforma fiecare vizită într-o
+            experiență de neuitat.
+          </p>
+        </div>
+
+        <div class="justify-content-center">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="food/petrec.jpg"
+                  class="card-img-top"
+                  alt="un grup de oameni care se bucură ciocnind halbe cu bere rece "
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Petrecere cu tematică irlandeză</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="food/petrecere.jpg"
+                  class="card-img-top"
+                  alt="un cuplu cu doi copii, un băiat și o fată care sunt îmbracați în costum asiatic"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Petrecere cu tematică asiatică</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="food/sushi.jpg"
+                  class="card-img-top"
+                  alt="un grup de persoane care au în fața lor un platou de sushi"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Petrecere cu tematică japoneză</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="pt-4">Echipa noastră</h3>
+        <p class="fs-4" text>
+          Echipa noastră de bucătari este compusă din profesioniști
+          experimentați și creativi, care lucrează împreună pentru a aduce la
+          masă preparate proaspete și delicioase. Fiecare membru contribuie cu
+          abilitățile sale unice, creând o sinergie care se reflectă în fiecare
+          farfurie servită. Front-office-ul nostru este condus de ospitalitatea
+          și atenția la detalii ale personalului nostru de servire. De la
+          chelneri și ospătari pasionați până la managerii care asigură buna
+          desfășurare a evenimentelor, fiecare membru al echipei se străduiește
+          să creeze o atmosferă primitoare și să ofere servicii de cea mai
+          înaltă calitate. Suntem mândri de echipa noastră și credem că pasiunea
+          și profesionalismul acestora contribuie la succesul nostru continuu.
+          Vă invităm să descoperiți povestea fiecărui membru al echipei noastre
+          și să vă alăturați nouă pentru o călătorie gastronomică de excepție la
+          Green Cuisine.
+        </p>
+
+        <div class="justify-content-center">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="food/ana.jpg"
+                  class="card-img-top"
+                  alt="imagine cu o femeie cu păr șaten"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Maria Patură - Bucătar șef</h3>
+                  <p class="card-text">
+                    La baza oricărei mese reușite stă pasiunea pentru prepararea
+                    hranei, iar pentru mine, ca bucătar șef, această pasiune
+                    devine o artă cu fiecare ingredient ales și fiecare gust
+                    adus în armonie. Femeile au adus și aduc, în continuare, o
+                    contribuție semnificativă în universul culinar, iar în
+                    calitate de bucătar șef femeie, consider că putem aduce o
+                    notă de sensibilitate și creativitate în fiecare farfurie.
+                    Fiecare preparat reprezintă o poveste, iar eu îmi propun să
+                    transform fiecare experiență culinară într-un dialog
+                    gustativ captivant.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="food/man.jpg"
+                  class="card-img-top"
+                  alt="bărbat cu barbă care zâmbește"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Dragoș Matei - Manager</h3>
+                  <p class="card-text">
+                    Echipa noastră dedicată și talentată se angajează să ofere
+                    nu doar preparate delicioase, ci și experiențe memorabile.
+                    În spatele fiecărui detaliu, de la selecția atentă a
+                    meniului până la atmosfera caldă și primitoare, stă dorința
+                    noastră de a vă oferi momente speciale și unice. Suntem
+                    deschiși la inovație și mereu în căutare de noi modalități
+                    de a vă surprinde papilele gustative și de a vă oferi o
+                    experiență variată și rafinată. În plus, suntem mândri să
+                    găzduim evenimente speciale..
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="food/mara.jpg"
+                  class="card-img-top"
+                  alt=" o femeie cu părul ginger tuns până la umeri și ochii albaștri"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Andreea Soare - Bucătar</h3>
+                  <p class="card-text">
+                    În culisele bucătăriei noastre de la Green Cuisine, îmi
+                    dedic pasiunea și priceperea pentru a contribui la fiecare
+                    experiență culinară extraordinară pe care o oferim
+                    clienților noștri. Ca ajutor de bucătar, văd fiecare
+                    preparat ca pe o piesă de artă în care detalii minuțioase și
+                    dedicare fac diferența.În spatele fiecărui meniu delicios și
+                    fiecărui preparat proaspăt pregătit, stă echipa noastră
+                    unită unde colaborarea și comunicarea sunt cheia succesului.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1148.9320233778813!2d23.59708392844693!3d46.77206548119094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c213ed6bea9%3A0xe886e075c7483f9b!2sNapoli%20Centrale!5e0!3m2!1sen!2sro!4v1699928374231!5m2!1sen!2sro"
+        width="100%"
+        height="450"
+        style="border: 0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <footer class="bg-success bg-opacity-75">
+      <div class="container">
+        <address class="fw-bold">
+          Locație & Contact<br />
+          Telefon: 0753944324<br />
+          Email: greencuisine@gmail.com<br />
+          Adresă: Str. Decebal Nr. 20 Cluj-Napoca
+        </address>
+
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2023 Green Cuisine. Toate drepturile rezervate.</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="item list-unstyled d-flex">
+              <li>
+                <a href="https://www.facebook.com/"
+                  ><img src="food/facebook.png" alt="logo facebook" width="50%"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"
+                  ><img
+                    src="food/instagram.png"
+                    alt="logo instagram"
+                    width="50%"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/"
+                  ><img src="food/twitter.png" alt="logo twitter" width="50%"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+</html>
